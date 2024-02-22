@@ -1,3 +1,75 @@
+c# Interview questions:
+-----------------------
+.NET framework
+--------------
+ helps you build web apps, desktop apps, and web services. It works only on the Windows operating system. 
+.NET
+----
+. NET core is for creating cross-platform cloud apps that run on Windows, Mac, and Linux.
+ 
+1.Explain Difference between .NET and C#?
+A..Net is a framework and contains Libraries and Runtime
+  C# is a Programming Language And it contains syntaxes,conditions,loops and more..
+  by using both .net and c# we can develop the applications
+  
+2.what is MSIL(microsoft Intermediate Language)?
+A. IL is partially converted code. when we compile the higher level it conveted into partially compiled code
+
+3.What is JIT?
+A.JIT(Just In Time) is runs over the IL code and compiled into Machine Language
+
+4.Is it possible to view IL code?
+A.Yes,it possible to see IL code using IL DASM(Dis Assembler)
+
+5.What is the benefit of compiling into IL code?
+A.The runtime enviroment and development enviroment can be very different.so depending on runtime enviroment
+  JIT compiles the best optimized code as per enviroment. 
+Ex. developer developed the app in windows10 then if we want run in win8 win7 or linux , using thst IL code
+  JIT compiles best to that enviroment
+
+6.does .NET framework supports multiple programming languages?
+A.Yes,it supports multiple programming languages like c#,vb.net,f# etc
+ but at end that code compiles into IL code. 
+
+7.What is CLR?
+A. 1.CLR converts te IL code into Native language(Machine Language)
+   2.it cleans any unused code objects by using Garbage Collector(GC)
+
+8.what is managed code and unmanaged code?
+A.Manage Code: The code that executes under CLR enviroment 
+  unmanaged code:The code that executes outside of CLR enviroment, this code has its own enviroment.
+  Unmanged code nothing but c++,vc++,vb6 etc...
+  
+9.what is garbage collector?
+A. Garbage Collector is a Back ground process which cleans unused managed resources.
+
+10.Can garbage collector claim unmanaged code?
+A.  No,garbage collector can not collects objects which runs outside the CLR.
+
+11.what is CTS?
+A. Common Type System(CTS) ensures that data types of two different langages gets compiled to a common data type
+
+12.Explain CLS?
+A. common language specification(CLS) are set of guide lines or rules. when any .net programming lanuage adheres to
+  to these set of rules it can be consumed by any language of .NET framework
+
+13.what is stack and heap?
+A.stack and heap are memory types in an application.Stack memory stores data types like int,bool,double etc
+  while heap stores the data tyeps like string and objects  
+  
+14.what are Value types and Reference types ?
+A. Value types contain actual data and while reference types contain pointers and pointer points the actual data
+  Value types are  are stored in stck while refernce stored in heap.
+  values types like int,double,bool etc.. and refernce types are all objects..
+  
+15.what is boxing and unboxing?
+A.when value type is moved to reference type is called Boxing.
+  when reference type moved into value type is called Unboxing  
+ 
+16.what is the consequance of boxing and unboxing?
+A.performance issues, beacuse we are moving value to reference i.e stack to heap so performance issues will occure
+
+17. 
 Array
 -----
 1.array is a collection of elelments in a single varible with similar data type.
