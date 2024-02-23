@@ -42,7 +42,7 @@ namespace ExceptionHandlingsEx
         static void Main(string[] args)
         {
             //Program p = new Program();
-            //p.divide();
+            ///p.show();
 
             try
             {
