@@ -175,4 +175,60 @@ ArrayList:
 3.if bufer filled and double the meomory and repeat
 4.arraylist size can be customized
 5.object can be provided with the initializers.
-		
+Collections:
+------------
+array-- type safe, fixed in size
+arraylist,hashtable--auto resize and but not type safe
+                     
+solution is Generics
+
+Generics--type safe and auto resized
+String and String Builders:
+---------------------------
+string:
+-------
+
+string: immutable
+ string s="hello"   
+ s+="World"
+ 
+ creates memoery for every change:
+ Hello (one location)
+ Hello world (different location)
+-> string will not allow changes ,if any change takes place it will be in new memory loaction
+
+ string Builder: Mutable
+ ---------------
+ stringBulder sb=new stringBulder();
+ sb="Hello";
+ sb+="World";
+  
+ saved in same memory loaction
+  Hello World
+-> It will allow changes ,if any changes takes place it will be in same location
+
+stringBulder execution is also very fast compare with String  
+ Exception Handlings:
+-------------------
+classification of errors:
+-------------------------
+1.CTE:
+------
+these errors will when the compile it provides error for those innstructions which are written beyond the syntx or rule.
+2.Logical error:
+---------------
+when expected output mismatch with actual output
+
+3.RTE:
+------
+this will occur aftrer execution of program
+
+Blocks used in exception handlings:
+-----------------------------------
+1)try
+2)catch
+3)finally
+4) throw-- single statement block
+
+
+					 		
