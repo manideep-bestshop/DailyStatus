@@ -229,6 +229,30 @@ Blocks used in exception handlings:
 2)catch
 3)finally
 4) throw-- single statement block
+Boxing and UnBoxing:
+--------------------
+Boxing:
+-------
+It is a term used to describe the transformation from "Value Type to Reference Type(object)".
+At runtime it creates a temparory reference type box for the object an heap memory.
+
+UnBoxing:
+---------
+It is a term used describe the transformation from reference type to value type It should be converted explicitly.
+
+ int i=37;
+ object j = i;   //Boxing Value type to reference type  
+ // 1) value is copied from stack to heap
+ //2) creates Box for that value
+ //3) Provide reference for that value
+ //4) returns reference to stack
+ 
+ Console.WriteLine(i+" "+j); // 37 37
+
+ // int k = j; CTE-- need Explicit
+
+ int k = (int)j;  //UnBoxing refernce type to value type
+            
 
 
 					 		
