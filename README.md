@@ -253,6 +253,78 @@ It is a term used describe the transformation from reference type to value type 
 
  int k = (int)j;  //UnBoxing refernce type to value type
             
+Access Specifiers:
+------------------
+In C#,access specifiers are keywords used to control the visibility and accessability of types and their members(fields,methods,properties etc..)
+ there are four main access specifiers in c#
+ 
+ 1)Public: Public members are accessible from any other code in same Assembly or referencing Assembly.
+ 2)Private: private members are accessible only within the same class.
+ 3)Protected:Protected members are accessible within the same class and also in derived class
+ 4)Internal:Internal members accessible within the same assembly but not from outside the assembly.
+ 
+1. What are access specifiers in C#?
+A. Access specifiers are keywords used to control the visibility and accessability of the members(fields,methods,Properties).
+
+2.Why are access specifiers important in object-oriented programming?
+A.Access specifiers are like security guards for the data and methods within an object-oriented programming.
+  they control who gets to see and use what. Imagine your object as a house with different rooms containing valuable items.
+  Access specifiers decide who can enter which room and who can touch or modify the items inside.
+
+3.Explain the difference between public, private, protected, and internal access specifiers. 
+A. Public: Public members are accessible from any other code in same Assembly or referencing Assembly.
+   Private: private members are accessible only within the same class.
+   Protected:Protected members are accessible within the same class and also in derived class
+   Internal:Internal members accessible within the same assembly but not from outside the assembly.
+ 
+4.Can you have multiple access specifiers for a single member in C#?
+A. No, a single member can only have one access specifier in C#. 
+  Combining multiple access specifiers for a single member is not allowed.
+
+5.What is the default access specifier for members in a C# class if no access specifier is specified?
+A.
+The default access specifier for members in a C# class is private.
+
+6.How does the protected internal access specifier differ from protected and internal individually?
+A.protected internal: Members are accessible within the same assembly or by derived classes,
+ regardless of the assembly in which they are derived.
+ protected: Members are accessible within the same class or by derived classes.
+ internal: Members are accessible only within the same assembly.
+
+7.What is the significance of the private protected access specifier introduced in C# 7.2?
+A.private protected: Members are accessible within the same assembly and
+  by derived classes that are declared within the same assembly.
+
+8.How does the accessibility of members differ between base classes and derived classes?
+A.Derived classes inherit accessible members (public and protected) from their base classes.
+ Private members are not inherited and cannot be accessed directly by derived classes.
+
+9.Explain the concept of encapsulation and how access specifiers contribute to it.
+A.Encapsulation is the bundling of data and methods that operate on the data into a single unit (class) and controlling access to that unit.
+ Access specifiers help enforce encapsulation by allowing developers to specify which parts of a class are visible to other parts of the program.
+
+10.Can access specifiers be applied to namespaces in C#?
+A.No, access specifiers cannot be applied to namespaces in C#. Namespaces do not have accessibility levels.
+
+11.How does the protected internal access specifier affect inheritance and access control within different assemblies?
+A.protected internal members are accessible within the same assembly and by derived classes,
+ regardless of the assembly in which they are derived. owever, outside the assembly, 
+ protected internal members behave as protected, meaning they are accessible only by derived classes
+
+12.What happens if you attempt to access a private member of a class from outside the class?
+A.If you attempt to access a private member of a class from outside the class, you will encounter a compilation error,
+  indicating that the member is inaccessible due to its protection level.
+
+13.When would you use the internal access specifier instead of public or private?
+A.You would use the internal access specifier when you want members to be accessible only within the same assembly but not from outside the assembly.
+ This is useful for hiding implementation details and ensuring that certain functionalities are only accessible within a specific assembly.
+
+14.Can you change the accessibility of a base class member in a derived class?
+A.No, the accessibility of a base class member cannot be changed in a derived class. 
+The accessibility of a member is determined by its declaration in the base class and cannot be altered in derived classes.
+
+
+
 
 
 					 		
