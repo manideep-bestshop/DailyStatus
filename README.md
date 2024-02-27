@@ -324,7 +324,74 @@ A.No, the accessibility of a base class member cannot be changed in a derived cl
 The accessibility of a member is determined by its declaration in the base class and cannot be altered in derived classes.
 
 
+Methods in C#:
+-------------
+In c#,Methods are classified based on various criteria such as access modiffiers,return types and parameters.
 
+1.Instance Method:
+------------------
+These are methods that operates on an instance of a class and can access instance variables and other instance methods.
+
+2.Static Method:
+----------------
+These methods belong to the class rather to any specific instance.They can be called using the class name
+
+3.Parameterized methods:
+------------------------
+These methods accept parameters that provide input for the method logic
+
+4.Return Types Methods:
+-----------------------
+These methods return a value after programing a logic
+
+5.Void Method:
+--------------
+These methods are do not return any value
+
+6.Overloaded Methods:
+---------------------
+these are the methods with same name and with different parameters lists
+
+
+1.What is a method in C#?
+A. Method in C# is a block of code that performs a specific task
+
+2.Explain the difference between instance methods and static methods in C#.
+A.Instance methods operate on an instance of a class and can access instance variables. 
+  Static methods belong to the class itself and can be called without creating an instance of the class.
+  
+3.How do you define a method with multiple parameters in C#?
+A.  public void MyMethod(int param1, string param2)
+   {
+    // Method logic
+   }
+
+4.What is method overloading? Provide an example.
+A.Method overloading is the ability to define multiple methods with the same name but different parameter lists within the same class.   
+
+5.How do you return multiple values from a method in C#?
+A.You can return multiple values from a method by using out or by returning an object 
+  that encapsulates multiple values such as a tuple or a custom class.
+
+6.What are access modifiers in C# methods? Provide examples.
+A.Access modifiers control the visibility and accessibility of methods. Examples include public, private, protected, and internal  
+
+7.How do you call a base class method from a derived class in C#?
+A.You can call a base class method from a derived class using the base keyword followed by the method name.
+
+8.Explain the purpose of the override keyword in C# methods.
+A.The override keyword is used to override a virtual or abstract method defined in a base class. 
+  It allows derived classes to provide their own implementation of the me
+
+9.What is the difference between virtual and abstract methods in C#?
+A.virtual methods have a default implementation in the base class but can be overridden in derived classes. 
+  abstract methods do not have an implementation in the base class and must be overridden in derived classes. 
+
+10.Explain the concept of method signature in C#.
+A.The method signature consists of the method's name and its parameter list.
+ It does not include the return type or the method's access modifie  
+ 
+ 
 
 
 					 		
