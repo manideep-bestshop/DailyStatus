@@ -392,6 +392,38 @@ A.The method signature consists of the method's name and its parameter list.
  It does not include the return type or the method's access modifie  
  
  
+Basic C# questions:
+------------------
+1.What is method overloading in C#?
+A.Method overloading allows multiple methods in the same class to have the same name but with different parameter lists.
 
+2.Describe the difference between for, foreach, while, and do-while loops in C#.?
+A.for loop is used when the number of iterations is known, foreach loop is used to iterate over collections, while loop continues 
+  iterating while a condition is true, and do-while loop is similar to while loop but guarantees at least one iteratio
+  
+3.How would you break out of nested loops in C#?
+A.You can use the break statement followed by a label name to break out of nested loops in C#.
+
+4.What is the purpose of the continue statement in a loop?
+A.The continue statement is used to skip the current iteration of a loop and proceed to the next iteration. 
+
+5.Explain the difference between break and return statements.
+A.break is used to exit a loop or switch statement, while return is used to exit a method and optionally return a value.
+
+6.What is an enum in C#?
+A.An enum, short for enumeration, is a distinct type consisting of a set of named constants called enumerators. 
+
+7.How do you define an enum in C#?
+A.Enums are defined using the enum keyword followed by the enum name and a list of comma-separated enum members enclosed in curly braces.
+
+8.What are implicit and explicit conversions in C#?
+A.Implicit conversions are performed automatically by the compiler when no data loss can occur, 
+while explicit conversions require a cast operator and may result in data loss.
+
+9.What is the difference between boxing and unboxing in C#?
+A.Boxing is the process of converting a value type to a reference type, while unboxing is the process of converting a reference type back to a value type.
+
+10.How would you convert a string to an integer in C#?
+A.You can use methods like int.Parse() or int.TryParse() to convert a string to an integer in C#.
 
 					 		
